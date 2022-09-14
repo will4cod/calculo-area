@@ -24,6 +24,34 @@ $dark-color: black;
     }
 }
 
+@mixin div-quad-ret {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    h3{
+        font-size: 30px;
+        margin: 10px;
+        color: $white-color;
+    }
+
+    .arrow{
+        width: 50px;
+    }
+
+    &_comprimento{
+        @include div-result();
+        
+        img{
+            transform: rotate(90deg);
+        }
+    }
+
+    &_largura{
+        @include div-result();
+    }
+}
+
 header {
     background-color: $primary-color;
 
@@ -32,6 +60,7 @@ header {
         font-size: 2em;
         color: $white-color;
         padding: 10px;
+        text-transform: capitalize;
     }
 }
 
@@ -52,31 +81,11 @@ main{
     position: relative;
 
     &_quadrado{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include div-quad-ret();
+    }
 
-        h3{
-            font-size: 30px;
-            margin: 10px;
-            color: $white-color;
-        }
-
-        .arrow{
-            width: 50px;
-        }
-
-        &_comprimento{
-            @include div-result();
-            
-            img{
-                transform: rotate(90deg);
-            }
-        }
-
-        &_largura{
-            @include div-result();
-        }
+    &_retangulo{
+        @include div-quad-ret();
     }
 
     h2{
@@ -120,7 +129,7 @@ main{
 
     .docs{
         position: absolute;
-        bottom: 0;
+        bottom: 20px;
         left: 10px;
 
         a{
@@ -132,8 +141,9 @@ main{
 }
 
 /* ABAS */
-.tabs{
-    display: none;
+input[type="radio"]{
+    // display: none;
+    visibility: hidden;
 }
 
 .tabs + label + section{
@@ -146,13 +156,13 @@ main{
     transition: opacity ease-in-out .3s;
 }
 
-.tabs:checked + label + section{
+input[type="radio"]:checked + label + section{
     opacity: 1;
     z-index: 1000;
 }
 
 /* Labels */
-.tabs + label {
+input[type="radio"] + label{
     line-height: 40px;
     padding: 0 20px;
     float: left;
@@ -162,7 +172,7 @@ main{
     transition: ease-in-out .3s;
 }
 
-.tabs:checked + label {
+input[type="radio"]:checked + label{
     color: $dark-color;
     background-color: $white-color;
 }

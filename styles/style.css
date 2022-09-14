@@ -14,6 +14,7 @@ header h1 {
   font-size: 2em;
   color: white;
   padding: 10px;
+  text-transform: capitalize;
 }
 
 main {
@@ -33,7 +34,7 @@ main {
   position: relative;
 }
 .formas_quadrado {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
@@ -66,6 +67,42 @@ main {
   min-width: 150px;
 }
 .formas_quadrado_largura p {
+  font-size: 25px;
+}
+.formas_retangulo {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.formas_retangulo h3 {
+  font-size: 30px;
+  margin: 10px;
+  color: white;
+}
+.formas_retangulo .arrow {
+  width: 50px;
+}
+.formas_retangulo_comprimento {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  min-width: 150px;
+}
+.formas_retangulo_comprimento p {
+  font-size: 25px;
+}
+.formas_retangulo_comprimento img {
+  transform: rotate(90deg);
+}
+.formas_retangulo_largura {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  min-width: 150px;
+}
+.formas_retangulo_largura p {
   font-size: 25px;
 }
 .formas h2 {
@@ -103,7 +140,7 @@ main {
 }
 .formas .docs {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   left: 10px;
 }
 .formas .docs a {
@@ -113,8 +150,8 @@ main {
 }
 
 /* ABAS */
-.tabs {
-  display: none;
+input[type=radio] {
+  visibility: hidden;
 }
 
 .tabs + label + section {
@@ -127,13 +164,13 @@ main {
   transition: opacity ease-in-out 0.3s;
 }
 
-.tabs:checked + label + section {
+input[type=radio]:checked + label + section {
   opacity: 1;
   z-index: 1000;
 }
 
 /* Labels */
-.tabs + label {
+input[type=radio] + label {
   line-height: 40px;
   padding: 0 20px;
   float: left;
@@ -143,7 +180,7 @@ main {
   transition: ease-in-out 0.3s;
 }
 
-.tabs:checked + label {
+input[type=radio]:checked + label {
   color: black;
   background-color: white;
 }

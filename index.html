@@ -16,7 +16,7 @@
 
     <main>
         <!-- menu 1 - quadrado -->
-        <input type="radio" name="tabs" class="tabs" id="tab1" checked>
+        <input type="radio" name="tabs" class="tabs" id="tab1" checked />
         <label for="tab1">Quadrado</label>
         <section class="formas">
 
@@ -38,6 +38,40 @@
                 </div>
 
                 <div class="formas_quadrado_largura">
+                    <p>10m</p>
+                    <img src="./image/arrow.png" alt="largura" class="arrow" srcset="">
+                </div>
+                
+            </div>
+
+            <div class="docs">
+                <p>Para aprender sobre o calculo: <a href="https://escolakids.uol.com.br/matematica/area-do-retangulo-e-do-quadrado.htm" target="_blank">Acesse.</a> </p>
+            </div>
+        </section>
+
+        <!-- menu 2 - retangulo -->
+        <input type="radio" name="tabs" class="tabs" id="tab2" />
+        <label for="tab2">Retangulo</label>
+        <section class="formas">
+
+            <form action="#" method="get">
+                <input type="number" name="comprimento-retangulo" id="comprimento-retangulo" placeholder="Comprimento">
+                <input type="number" name="largura-retangulo" id="largura-retangulo" placeholder="Largura">
+    
+                <button type="button" onclick="calcRetangulo()" id="calcRetangulo" >Calcular</button>
+            </form>
+
+            <div class="formas_retangulo">
+                <h2>Resultado</h2>
+
+                <h3 id="resultado-retangulo">100m2</h3>
+
+                <div class="formas_retangulo_comprimento">
+                    <p>10m</p>
+                    <img src="./image/arrow.png" alt="comprimento" class="arrow" srcset="">
+                </div>
+
+                <div class="formas_retangulo_largura">
                     <p>10m</p>
                     <img src="./image/arrow.png" alt="largura" class="arrow" srcset="">
                 </div>
