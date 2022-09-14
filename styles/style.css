@@ -38,27 +38,27 @@ main {
 .formas_quadrado .arrow {
   width: 60px;
 }
-.formas_quadrado_base {
+.formas_quadrado_comprimento {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 10px;
   min-width: 150px;
 }
-.formas_quadrado_base p {
+.formas_quadrado_comprimento p {
   font-size: 30px;
 }
-.formas_quadrado_base img {
+.formas_quadrado_comprimento img {
   transform: rotate(90deg);
 }
-.formas_quadrado_altura {
+.formas_quadrado_largura {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 10px;
   min-width: 150px;
 }
-.formas_quadrado_altura p {
+.formas_quadrado_largura p {
   font-size: 30px;
 }
 .formas h2 {
@@ -94,6 +94,16 @@ main {
   min-width: 100px;
   cursor: pointer;
 }
+.formas .docs {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+.formas .docs a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
 
 /* ABAS */
 .tabs {
@@ -102,9 +112,9 @@ main {
 
 .tabs + label + section {
   width: 100%;
+  height: 100%;
   opacity: 0;
   position: absolute;
-  top: 70px;
   left: 0;
   z-index: -1;
   transition: opacity ease-in-out 0.3s;
