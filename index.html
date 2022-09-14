@@ -20,12 +20,12 @@
         <label for="tab1">Quadrado</label>
         <section class="formas">
 
-            <form action="#" method="get">
+            <div class="form">
                 <input type="number" name="comprimento-quadrado" id="comprimento-quadrado" placeholder="Comprimento">
                 <input type="number" name="largura-quadrado" id="largura-quadrado" placeholder="Largura">
     
                 <button type="button" onclick="calcQuadrado()" id="calcQuad" >Calcular</button>
-            </form>
+            </div>
 
             <div class="formas_quadrado">
                 <h2>Resultado</h2>
@@ -54,12 +54,12 @@
         <label for="tab2">Retangulo</label>
         <section class="formas">
 
-            <form action="#" method="get">
+            <div class="form">
                 <input type="number" name="comprimento-retangulo" id="comprimento-retangulo" placeholder="Comprimento">
                 <input type="number" name="largura-retangulo" id="largura-retangulo" placeholder="Largura">
     
-                <button type="button" onclick="calcRetangulo()" id="calcRetangulo" >Calcular</button>
-            </form>
+                <button type="button" onclick="calcRetangulo(this)" id="calcRetangulo" >Calcular</button>
+            </div>
 
             <div class="formas_retangulo">
                 <h2>Resultado</h2>

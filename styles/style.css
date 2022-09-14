@@ -109,7 +109,7 @@ main {
   text-align: center;
   font-size: 1.4em;
 }
-.formas form {
+.formas .form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,18 +118,18 @@ main {
   height: 17vh;
   /* remove arrows input number Chrome, Safari, Edge, Opera */
 }
-.formas form input {
+.formas .form input {
   padding: 10px;
   background-color: rgb(211, 211, 211);
   border: 0;
   -webkit-appearance: none;
 }
-.formas form input::-webkit-outer-spin-button,
-.formas form input::-webkit-inner-spin-button {
+.formas .form input::-webkit-outer-spin-button,
+.formas .form input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.formas form button {
+.formas .form button {
   padding: 10px;
   background-color: white;
   color: black;

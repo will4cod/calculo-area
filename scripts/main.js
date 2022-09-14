@@ -18,6 +18,21 @@ function calcQuadrado(){
     }
 }
 
+function calcRetangulo(){
+
+        // pega os valores
+        const comprimento = document.getElementById('comprimento-retangulo').value;
+        const largura = document.getElementById('largura-retangulo').value;
+    
+        if(!comprimento || !largura){
+            alert("Preencha todos os campos");
+        }
+    
+        if(comprimento > 0 && largura > 0){
+            mostrarResultado(comprimento, largura, 'retangulo');
+        }
+}
+
 
 function mostrarResultado(comprimento, largura, figura){
     
