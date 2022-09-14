@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,40 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <h1>calculo area</h1>
+
+    <header>
+        <h1>área</h1>
+    </header>
+
+    <main>
+        <!-- menu 1 - quadrado -->
+        <input type="radio" name="tabs" class="tabs" id="tab1" checked>
+        <label for="tab1">Quadrado</label>
+        <section class="formas">
+
+            <form action="#" method="get">
+                <input type="number" name="base-quadrado" id="base-quadrado" placeholder="Base">
+                <input type="number" name="altura-quadrado" id="altura-quadrado" placeholder="Altura">
+    
+                <button type="button" onclick="calcQuadrado()" id="calcQuad" >Calcular</button>
+            </form>
+
+            <div class="formas_quadrado">
+                <h2>Resultado</h2>
+
+                <div class="formas_quadrado_base">
+                    <p>10</p>
+                    <img src="./image/arrow.png" alt="base" class="arrow base" srcset="">
+                </div>
+
+                <div class="formas_quadrado_altura">
+                    <p>10</p>
+                    <img src="./image/arrow.png" alt="altura" class="arrow altura" srcset="">
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
 </body>
 </html>
