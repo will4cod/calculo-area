@@ -34,7 +34,7 @@ main {
   position: relative;
 }
 .formas_quadrado {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -70,7 +70,7 @@ main {
   font-size: 25px;
 }
 .formas_retangulo {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -104,6 +104,50 @@ main {
 }
 .formas_retangulo_largura p {
   font-size: 25px;
+}
+.formas_circulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formas_circulo h3 {
+  font-size: 30px;
+  margin: 10px;
+  color: white;
+}
+.formas_circulo .arrow {
+  width: 50px;
+}
+.formas_circulo_comprimento {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  min-width: 150px;
+}
+.formas_circulo_comprimento p {
+  font-size: 25px;
+}
+.formas_circulo_comprimento img {
+  transform: rotate(90deg);
+}
+.formas_circulo_largura {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  min-width: 150px;
+}
+.formas_circulo_largura p {
+  font-size: 25px;
+}
+.formas_circulo_raio {
+  position: relative;
+}
+.formas_circulo_raio p {
+  position: absolute;
+  top: 15px;
+  left: 10px;
 }
 .formas h2 {
   text-align: center;
