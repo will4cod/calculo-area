@@ -20,16 +20,30 @@ function calcQuadrado(){
 
 function calcRetangulo(){
 
+    // pega os valores
+    const comprimento = document.getElementById('comprimento-retangulo').value;
+    const largura = document.getElementById('largura-retangulo').value;
+
+    if(!comprimento || !largura){
+        alert("Preencha todos os campos");
+    }
+
+    if(comprimento > 0 && largura > 0){
+        mostrarResultado(comprimento, largura, 'retangulo');
+    }
+}
+
+function calcCirculo(){
+
         // pega os valores
-        const comprimento = document.getElementById('comprimento-retangulo').value;
-        const largura = document.getElementById('largura-retangulo').value;
-    
-        if(!comprimento || !largura){
+        const raio = document.getElementById('raio-circulo').value;
+
+        if(!raio){
             alert("Preencha todos os campos");
         }
     
-        if(comprimento > 0 && largura > 0){
-            mostrarResultado(comprimento, largura, 'retangulo');
+        if(raio > 0 ){
+           mostrarCirculo(raio, 'circulo');
         }
 }
 
@@ -50,4 +64,25 @@ function mostrarResultado(comprimento, largura, figura){
     // mostrando o resultado  
     let resultado = document.querySelector(`.formas_${figura} h3`);
     resultado.innerHTML = (comprimento * largura) + "m&sup2";
+}
+
+function mostrarCirculo(raio, figura){
+
+    const diametro = 2 * raio;
+    const pi = 3.14;
+
+    // mostrar a div resultado na tela
+    let divResultado = document.querySelector(`.formas_${figura}`);
+    divResultado.style.display = 'flex';
+
+    // mostrando os valores de entrada do usuario
+    let divRaio = document.querySelector(`.formas_${figura}_raio p`);
+    divRaio.innerHTML = raio + 'm';
+
+    let divDiametro = document.querySelector(`.formas_${figura}_diametro p`);
+    divDiametro.innerHTML = diametro + 'm';
+
+    // mostrando o resultado  
+    let resultado = document.querySelector(`.formas_${figura} h3`);
+    resultado.innerHTML = pi * (Math.pow(raio, 2)) + "m&sup2";
 }
