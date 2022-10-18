@@ -69,6 +69,27 @@ main {
 .formas_quadrado_largura p {
   font-size: 25px;
 }
+.formas_quadrado_altura {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  min-width: 150px;
+}
+.formas_quadrado_altura p {
+  font-size: 25px;
+}
+.formas_quadrado_base {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  min-width: 150px;
+  justify-content: flex-end;
+}
+.formas_quadrado_base p {
+  font-size: 25px;
+}
 .formas_retangulo {
   display: none;
   flex-direction: column;
@@ -103,6 +124,27 @@ main {
   min-width: 150px;
 }
 .formas_retangulo_largura p {
+  font-size: 25px;
+}
+.formas_retangulo_altura {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  min-width: 150px;
+}
+.formas_retangulo_altura p {
+  font-size: 25px;
+}
+.formas_retangulo_base {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  min-width: 150px;
+  justify-content: flex-end;
+}
+.formas_retangulo_base p {
   font-size: 25px;
 }
 .formas_circulo {
@@ -141,6 +183,27 @@ main {
 .formas_circulo_largura p {
   font-size: 25px;
 }
+.formas_circulo_altura {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  min-width: 150px;
+}
+.formas_circulo_altura p {
+  font-size: 25px;
+}
+.formas_circulo_base {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  min-width: 150px;
+  justify-content: flex-end;
+}
+.formas_circulo_base p {
+  font-size: 25px;
+}
 .formas_circulo_raio {
   position: relative;
 }
@@ -157,6 +220,63 @@ main {
   min-width: 150px;
 }
 .formas_circulo_diametro p {
+  font-size: 25px;
+}
+.formas_triangulo {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.formas_triangulo h3 {
+  font-size: 30px;
+  margin: 10px;
+  color: white;
+}
+.formas_triangulo .arrow {
+  width: 50px;
+}
+.formas_triangulo_comprimento {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  min-width: 150px;
+}
+.formas_triangulo_comprimento p {
+  font-size: 25px;
+}
+.formas_triangulo_comprimento img {
+  transform: rotate(90deg);
+}
+.formas_triangulo_largura {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  min-width: 150px;
+}
+.formas_triangulo_largura p {
+  font-size: 25px;
+}
+.formas_triangulo_altura {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  min-width: 150px;
+}
+.formas_triangulo_altura p {
+  font-size: 25px;
+}
+.formas_triangulo_base {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  min-width: 150px;
+  justify-content: flex-end;
+}
+.formas_triangulo_base p {
   font-size: 25px;
 }
 .formas h2 {

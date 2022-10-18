@@ -104,5 +104,19 @@ function mostrarCirculo(raio, figura){
 
 function mostrarTriangulo(base, altura, figura){
 
-    console.log(base, altura, figura)
+    // mostrar a div resultado na tela
+    let divResultado = document.querySelector(`.formas_${figura}`);
+    divResultado.style.display = 'flex';
+
+    // mostrando os valores de entrada do usuario
+    let divBase = document.querySelector(`.formas_${figura}_base p`);
+    divBase.innerHTML = base + 'm';
+
+    let divAltura = document.querySelector(`.formas_${figura}_altura p`);
+    divAltura.innerHTML = altura + 'm';
+
+    // mostrando o resultado  
+    let resultado = document.querySelector(`.formas_${figura} h3`);
+    resultado.innerHTML = (base * altura) / 2 + "m&sup2";
+
 }

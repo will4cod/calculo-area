@@ -50,6 +50,17 @@ $dark-color: black;
     &_largura{
         @include div-result();
     }
+
+    // adicionar figura triangulo
+    &_altura{
+        @include div-result();
+
+    }
+
+    &_base{
+        @include div-result();
+        justify-content: flex-end;
+    }
 }
 
 header {
@@ -105,6 +116,10 @@ main{
         &_diametro{
             @include div-result();
         }
+    }
+
+    &_triangulo{
+        @include div-quad-ret();
     }
 
     h2{
