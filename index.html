@@ -116,6 +116,41 @@
             </div>
         </section>
 
+
+        <!-- menu 4 - triangulo -->
+        <input type="radio" name="tabs" class="tabs" id="tab4" />
+        <label for="tab4">Triângulo</label>
+        <section class="formas">
+
+            <div class="form">
+                <input type="number" name="base-triangulo" id="base-triangulo" placeholder="Base">
+                <input type="number" name="altura-triangulo" id="altura-triangulo" placeholder="Altura">
+    
+                <button type="button" onclick="calcTriangulo(this)" id="calcTriangulo" >Calcular</button>
+            </div>
+
+            <div class="formas_retangulo">
+                <h2>Resultado</h2>
+
+                <h3 id="resultado-retangulo" title="resultado">100m2</h3>
+
+                <div class="formas_retangulo_comprimento" title="base">
+                    <p>10m</p>
+                    <img src="./image/arrow.png" alt="comprimento" class="arrow" srcset="">
+                </div>
+
+                <div class="formas_retangulo_largura" title="altura">
+                    <p>10m</p>
+                    <img src="./image/arrow.png" alt="largura" class="arrow" srcset="">
+                </div>
+                
+            </div>
+
+            <div class="docs">
+                <p>Para aprender sobre o calculo: <a href="https://escolakids.uol.com.br/matematica/area-do-triangulo.htm" target="_blank">Acesse.</a> </p>
+            </div>
+        </section>
+
     </main>
 
     <script src="./scripts/main.js"></script>

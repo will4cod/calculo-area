@@ -47,6 +47,21 @@ function calcCirculo(){
         }
 }
 
+function calcTriangulo(){
+
+    // pega os valores
+    const base = document.getElementById('base-triangulo').value;
+    const altura = document.getElementById('altura-triangulo').value;
+
+    if(!base || !altura){
+        alert("Preencha todos os campos");
+    }
+
+    if(base > 0 && altura > 0){
+        mostrarTriangulo(base, altura, 'triangulo');
+    }
+    
+}
 
 function mostrarResultado(comprimento, largura, figura){
     
@@ -85,4 +100,9 @@ function mostrarCirculo(raio, figura){
     // mostrando o resultado  
     let resultado = document.querySelector(`.formas_${figura} h3`);
     resultado.innerHTML = pi * (Math.pow(raio, 2)) + "m&sup2";
+}
+
+function mostrarTriangulo(base, altura, figura){
+
+    console.log(base, altura, figura)
 }
